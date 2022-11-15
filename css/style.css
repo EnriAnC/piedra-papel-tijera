@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Pacifico&family=Permanent+Marker&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+body{
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgb(111, 198, 230), rgb(168, 189, 230));
+
+}
+body img{
+    fill: white;
+
+}
+.contenedor{
+    height: 100vh;
+}
+.contenedor h2{
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 1rem;
+}
+.versus{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    background-color: rgba(0, 0, 0, 0.226);
+    box-shadow: 0px 0px 10px 3px black;
+}
+.versus h4{
+    margin: 1.2rem 0;
+}
+.versus-text{
+    margin: 0 -.5rem 0 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.372);
+    
+}
+.versus-text #S{
+    color: rgb(245, 245, 245);
+    position: relative;
+    left: -5px;
+    bottom: -3px;
+}
+.versus-text #V{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -3px;
+    right: -2px;
+}
+.jugador1 h4, .jugador2 h4{
+    font-size: .7rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.piedra-papel-tijera{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+    background-color: rgba(0, 0, 0, 0.226);
+    box-shadow: 0px 0px 5px 2px black;  
+}
+.opciones{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.piedra-papel-tijera h5{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 2px black;
+}
+.piedra-papel-tijera img:hover{
+    cursor: pointer;
+    animation: img-hover 1.5s linear infinite;
+}
+
+.piedra-papel-tijera img:focus{
+    filter: invert(100%)
+}
+#boton{
+    background-color: green;
+    padding: .5rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#boton:hover{
+    animation-name: boton-play;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.active{
+    filter: invert(1);
+}
+
+.jugador #count{
+    counter-increment: 1;
+}
+@keyframes boton-play{
+    50%{
+        background-color: aqua;
+        color: black;
+    }
+}
+
+@keyframes img-hover {
+    50%{
+        transform: translate(0rem, -1rem);
+    }
+}

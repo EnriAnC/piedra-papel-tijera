@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra-papel-tijera</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Juego de piedra, papel o tijera</h2>
+        <br>
+        <div class="versus">
+            <div class="jugador1" style="min-width: 5rem;">
+                <img src="./img/user-svgrepo-com.svg" alt="usuario" width="70px">
+                <h4>Usuario</h4>
+                <p id="countJugador1">0</p>    
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; align-items: center;">
+                    <div class="opcionVersus" id="jugador1" style="width: 70px;"></div>
+                    <p class="versus-text"><span id="V">V</span><span id="S">S</span></p>
+                    <div class="opcionVersus" id="cpu" style="width: 70px;"></div>
+                </div>
+                <h4 id="resultado" style="margin-top: 2rem; height: 1rem;"></h4>
+            </div>
+
+            <div class="jugador2" style="min-width: 5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu" width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect fill="#none" x="5" y="5" width="14" height="14" rx="1" />
+                    <path fill="#none" d="M9 9h6v6h-6z" />
+                    <path d="M3 10h2" />
+                    <path d="M3 14h2" />
+                    <path d="M10 3v2" />
+                    <path d="M14 3v2" />
+                    <path d="M21 10h-2" />
+                    <path d="M21 14h-2" />
+                    <path d="M14 21v-2" />
+                    <path d="M10 21v-2" />
+                </svg>
+                <h4>CPU</h4>
+                <p id="countCPU">0</p>
+            </div>
+        </div>
+        <br>
+        <div class="piedra-papel-tijera">
+            <div class="opciones">
+                <img class="opcion" id="piedra" src="./img/rock-svgrepo-com.svg" alt="piedra" width="70px">
+                <img class="opcion" id="papel" src="./img/paper-svgrepo-com.svg" alt="papel" width="70px">
+                <img class="opcion" id="tijera" src="./img/scissors-svgrepo-com.svg" alt="tijera" width="70px">
+            </div>
+            <h5>Elige una opci&oacute;n</h5>
+        </div>
+        <br>
+        <button id="boton">INICIAR JUEGO</button>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
