@@ -20,11 +20,11 @@ export function piedraPapelTijera(btn, selector){
             $active.forEach((e)=>{
                 e.classList.remove("active");
             })
-            e.path[0].classList.add("active");
+            e.target.classList.add("active");
 
             // Obtener el id de la selección del jugador
             // Mostrar la selección en pantalla 
-            opcion = e.path[0].id;
+            opcion = e.target.id;
             if (opcion == "piedra"){
                 $jugador1.innerHTML = `<img src="./img/rock-svgrepo-com.svg" alt="" width="70px">`;
             }
